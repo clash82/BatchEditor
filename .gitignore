@@ -1,0 +1,3 @@
+app_beditor/*.ddp
+app_beditor/release/*.exe
+app_beditor/release/*.dcu

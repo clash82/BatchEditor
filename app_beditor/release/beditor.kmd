@@ -1,0 +1,37 @@
+[Dyskowe]
+Formatuj dysk^1^FORMAT %1^WprowadŸ oznaczenie dysku (np: A: lub C:)^Formatuje wybrany dysk w stacji dysków lub dysk twardy (wyœwietla potwierdzenie przez rozpoczêciem)
+Wyœwietl ma³y plik^1^TYPE %1^Podaj lokalizacjê pliku (np: C:\AUTOEXEC.BAT)^Wyœwietla plik nie d³u¿szy ni¿ 25 linijek na ekranie
+Wyœwietl du¿y plik^1^MORE %1^Podaj lokalizacjê pliku (np: C:\AUTOEXEC.BAT)^Wyœwietla plik d³u¿szy ni¿ 25 linijek na ekranie (pauza co 25 linijek)
+Uruchom program^1^%1^Podaj œcie¿kê do programu (np: C:\COMMAND.COM)^Uruchamia dowolny program
+Wywo³aj plik wsadowy^1^CALL %1^Podaj lokalizacjê pliku (np: C:\AUTOEXEC.BAT)^Wywo³uje kolejny plik wsadowy (podprogram) i oczekuje jego zakoñczenie
+Wyœwietl pliki i katalogi^1^DIR %1 /P^WprowadŸ oznaczenie dysku lub œcie¿kê do katalogu (np: C:)^Wyœwietla wszystkie pliki i katalogi w podanej œcie¿ce
+Utwórz nowy katalog^1^MD %1^WprowadŸ nazwê nowego katalogu (np: C:\NOWY lub NOWY)^Tworzy nowy katalog na dysku
+Usuñ pusty katalog^1^RD %1^WprowadŸ nazwê katalogu (np: C:\PUSTY)^Usuwa pusty katalog z dysku (jeœli katalog nie jest pusty, nie zostanie usuniêty)
+Usuñ plik lub grupê plików^1^DEL %1^WprowadŸ œcie¿kê oraz nazwê pliku lub grupy plików (np: C:\TEMP.TMP)^Usuwa wybrany plik lub grupê plików z dysku (bez potwierdzenia)
+Zmieñ katalog roboczy^1^CD %1^WprowadŸ nazwê katalogu (np: C:\WINDOWS)^Zmienia katalog roboczy programu
+WyjdŸ z katalogu^0^CD..^-^Wychodzi z bie¿¹cego katalogu o jeden poziom wy¿ej
+PrzejdŸ do korzenia dysku^0^CD\^-^Przechodzi do katalogu g³ównego bie¿¹cego dysku
+Kopiuj plik lub grupê plików^2^COPY %1 %2^WprowadŸ œcie¿kê do pliku Ÿród³owego (lub grupy) oraz œcie¿kê docelow¹^Kopiuje plik lub grupê plików w nowe miejsce (parametr #1 to œcie¿ka i nazwa pliku wejœciowego, parametr #2 to nazwa pliku wyjœciowego lub œcie¿ka)
+Zmieñ nazwê lub przenieœ plik^2^REN %1 %2^WprowadŸ œciêzkê do pliku wejœciowego (lub grupy) oraz œcie¿kê docelow¹^Przenosi lub zmienia nazwê pliku lub grupy plików (parametr #1 to nazwa pliku wejœciowego lub œcie¿ka, parametr #2 to nazwa pliku docelowego lub œcie¿ka)
+
+[Ekranowe]
+Napisz tekst^1^ECHO %1^WprowadŸ dowolny tekst^Pisze na ekranie dowolny tekst
+Czekaj na dowolny przycisk^0^PAUSE >NUL^-^Powoduje wstrzymanie pracy programu do momentu wciœniêcia dowolnego klawisza
+Wyczyœæ ekran^0^CLS^-^Czyœci ca³y ekran
+Wyœwietl informacje o pamiêci^0^MEM^-^Wyœwietla dok³adne informacje o pamiêci komputera
+Zmieñ znak zachêty^1^PROMPT %1^WprowadŸ nowy wygl¹d znaku zachêty (domyœlnie $p$g)^Zmienia aktualny wygl¹d znaku zachêty
+Wyœwietl etykietê dysku^1^VOL %1^WprowadŸ oznaczenie dysku (np: C:)^Wyœwietla etykietê wybranego dysku
+Wyœwietl wersjê DOS^0^VER^-^Wyœwietla wersjê systemu DOS
+Wyœwietl wersjê Windows^0^WINVER^-^Wyœwietla wersjê systemu Windows (wychodzi z konsoli)
+
+[Wewnêtrzne]
+Nowa etykieta^1^: %1^WprowadŸ unikaln¹ nazwê dla etykiety (np: MOJA)^Tworzy etykietê, do której mo¿na póŸniej dokonaæ przeniesienia za pomoc¹ komendy "Przeskocz do etykiety"
+Przeskocz do etykiety^1^GOTO %1^WprowadŸ nazwê etykiety, do której chcesz przeskoczyæ (np: MOJA - jeœli ju¿ istnieje)^Powoduje przeskok do istniej¹cej ju¿ etykiety w trakcie trwania programu
+Wstaw komentarz^1^REM %1^WprowadŸ dowolny komentarz (komentarz nie jest brany pod uwagê podczas pracy programu)^Dodaje dowolny komentarz, który nie jest brany pod uwagê podczas pracy programu
+Emituj dŸwiêk^0^ECHO ^-^Emituje dŸwiêk z g³oœnika systemowego
+Uruchom ponownie komputer^0^ECHO G=FFFF:0 | DEBUG^-^Uruchamia ponownie komputer (dzia³a wy³¹cznie w systemie DOS, w przypadku systemów Windows powoduje zamkniêcie aktywnego okna programu lub jego zawieszenie)
+Zmieñ czas systemowy^1^TIME %1^WprowadŸ now¹ godzinê w formacie G:M:S,SS (np: 22:10:05,5)^Ustawia nowy czas systemowy
+Zmieñ datê systemow¹^1^DATE %1^WprowadŸ now¹ datê w formacie R.M.D (np: 2007.02.06)^Ustawia now¹ datê systemow¹
+Ustaw zmienn¹ œrodowiskow¹^1^SET %1^WprowadŸ unikaln¹ nazwê dla zmiennej œrodowiskowej (np: MOJA_ZMIENNA)^Ustawia now¹ zmienn¹ œrodowiskow¹ w systemie
+PrzejdŸ do wiersza poleceñ (Windows 98/ME)^0^COMMAND.COM^-^Uruchamia now¹ kopiê interpretatora komend (tylko Windows 95/98/Me)
+PrzejdŸ do wiersza poleceñ (Windows 2000/XP)^0^CMD^-^Uruchamia now¹ kopiê interpretatora komend (tylko Windows NT/2000/XP)

@@ -1,0 +1,1 @@
+Plik "beditor.kmd" zawiera listê komend. Nale¿y go skopiowaæ do katalogu z wersj¹ binarn¹ programu.
